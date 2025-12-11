@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message For Gayatri</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fde2f3, #e8e7ff, #d4f2ff);
+            background-size: 400% 400%;
+            animation: bgMove 16s ease infinite;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        @keyframes bgMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: fixed;
+            bottom: -20px;
+            font-size: 22px;
+            opacity: 0.8;
+            animation: floatUp 7s linear infinite;
+            color: #ff5fa2;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) translateX(0); opacity: 1; }
+            100% { transform: translateY(-120vh) translateX(40px); opacity: 0; }
+        }
+
+        .container-box {
+            max-width: 900px;
+            margin: 60px auto;
+            background: rgba(255, 255, 255, 0.55);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            backdrop-filter: blur(15px);
+            animation: fadeIn 1.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            line-height: 1.7;
+            color: #3d2b57;
+            animation: textReveal 3s ease;
+            white-space: pre-line;
+        }
+
+        @keyframes textReveal {
+            0% { opacity: 0; filter: blur(8px); }
+            100% { opacity: 1; filter: blur(0); }
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 25px;
+            background: -webkit-linear-gradient(#8b46ff, #ff4cad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 1s ease;
+        }
+    </style>
+</head>
+<main>
+    <nav
+        class="navbar navbar-expand-sm navbar-light bg-light"
+    >
+        <div class="container">
+            <a class="navbar-brand" href="message.html">Msg For Me</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Memories.html" aria-current="page"
+                            >Memories
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Meknowsyou.html">Dedicated To Gayu!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Graph.html">Graph</a>
+                    </li>
+                </ul>
+                    <button
+                        class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit"
+                    >
+                        <a class="nav-link" href="index.html">Logout</a>
+                    </button>
+            </div>
+        </div>
+    </nav>
+    
+</main>
+
+<body>
+
+<script>
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (18 + Math.random()*12) + "px";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 7000);
+}, 600);
+</script>
+
+<div class="container-box">
+    <div class="title">A Message For You, Gayu ❤️</div>
+
+    <div class="message-text" id="msg">
+    Your message will be placed here.
+    </div>
+</div>
+
+<script>
+const text = `Gayatri…
+कधी कधी अंतर इतकं मोठं वाटतं ना, की बोलायचं खूप असतं पण शब्दच साथ देत नाहीत. आज तुझ्यापासून दूर बसून मी हे लिहितोय, आणि मनात फक्त एकच गोष्ट आहे—if only you were here right now, I would tell you everything without a single pause… पण तू लांब आहेस, आणि मीही लांब आहे… आणि या अंतरात माझी चूक जास्तच मोठी भासते आहे.
+
+Gayatri, तुझ्याशिवाय माझा दिवस जसा अपूर्ण वाटतो, तशीच माझी माफीही तुझ्याशिवाय अपूर्ण आहे.
+I don’t know how I ended up hurting you. Maybe I didn’t think properly, maybe I misunderstood, maybe I was careless—par dil se, believe me, I never wanted to be the reason for even a single tear in your eyes. Long distance already takes so much from us—time, touch, presence—and I should’ve been more gentle with your heart.
+
+Tu jithe pan ahes, माझे प्रत्येक शब्द तुला पोहोचोत अशी इच्छा आहे.
+Kabhi kabhi lagta hai, agar tum mere saamne hoti toh shayad meri aankhon mein jo sachchai hai, woh tum pehle hi pal mein samajh leti. Because no matter the distance, one truth never changes — I care for you, deeply, honestly, silently, and constantly.
+
+Gayatri, तू मला रागवतेस तेव्हा मला वाईट वाटत नाही… माझा राग नाही वाढत… उलट एकच विचार येतो — “I hope she knows how much she means to me.”
+हर बार जब तुम नाराज़ होती हो, मेरे अंदर कुछ टूट सा जाता है,
+because your anger does not push me away… it reminds me how much value you hold in my life.
+तुझी नाराजी मला शिक्षा म्हणून नाही वाटत, तर एक इशारा — की कदाचित मी त्या व्यक्तीसारखा परिपूर्ण ठरलो नाही, ज्याची तू अपेक्षा करतेस.
+
+I know distance makes everything feel heavier.
+You’re far away, I can’t meet you, can’t sit next to you, can’t hold your hand, can’t look into your eyes and say “I’m sorry.”
+But believe me, जर मी तुझ्यासमोर असतो ना, तर हा सगळा अभिमान, राग, सगळं बाजूला ठेवून फक्त एकच गोष्ट बोललो असतो —
+“I am truly, truly sorry.”
+
+Gayatri, तू माझ्यासाठी काही साधी व्यक्ती नाहीस.
+तू ती आहेस जिने माझ्या शांत दिवसातही अर्थ घातला…
+तू ती आहेस जी माझ्या मेसेजच्या स्क्रीनवर दिसली की हृदय एक सेकंद थांबतं…
+तू ती आहेस ज्याच्याशी बोलायचं असतं, जरी दिवस भरभरून गेला असेल तरी.
+
+And now, thinking that my words hurt you… it breaks something inside me.
+
+Main jaanta hoon long distance mein misunderstandings badi jaldi hoti hain,
+but I want you to know this one thing —
+No distance can reduce what I feel for you. Not now, not ever.
+
+तू मला माफ केलंस किंवा नाही, त्यापेक्षा महत्वाचं म्हणजे मी मनापासून क्षमा मागतोय.
+I want you to heal. I want your heart to feel light.
+I want this pain—jo bhi maine diya ho—to fade away.
+Because Gayatri, तुझं हसू माझ्यासाठी खूप महत्वाचं आहे.
+तू जवळ असलीस हवं असं नाही… तुझा आनंद माझ्यापर्यंत पोहोचला तरी पुरेसं आहे.
+
+If this feels like a last message…
+then let it carry every emotion I’ve held inside:
+
+Thank you for every moment.
+Sorry for every hurt.
+And I still care for you—beyond distance, beyond misunderstanding, beyond everything.
+तू लांब आहेस, पण माझ्या मनातून कधीच लांब गेली नाहीस.
+तू नाराज आहेस, पण माझ्या भावनांनी तुझ्यावरची माया थांबवलेली नाही.
+तू शांत आहेस, पण माझं मन अजूनही तुलाच हाक मारतं.
+
+Gayatri…
+If your heart gives me even the smallest chance,
+I promise I will hold it gently.
+I won’t break it, I won’t ignore it,
+and I won’t ever take you for granted again.
+
+इथूनही, या अंतरातूनही,
+I’m sending you the most genuine apology I’ve ever felt in my life.`;
+
+let i = 0;
+function reveal() {
+    if (i < text.length) {
+        document.getElementById("msg").innerHTML = text.substring(0, i+1);
+        i++;
+        setTimeout(reveal, 35);
+    }
+}
+
+window.onload = reveal;
+</script>
+
+</body>
+</html>
